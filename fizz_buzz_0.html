@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fizz Buzz 0</title>
+	<link href="styles/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/brand.css" rel="stylesheet">
+</head>
+<body>
+<script>
+function myFunction() {
+	var fname = document.getElementById('fname').value
+	var mname = document.getElementById('mname').value
+	var lname = document.getElementById('lname').value
+	document.getElementById('welcome_message').innerHTML = "Welcome, " + fname + " " + mname + " " + lname + ", to Oodles of Yum!";
+	var count = prompt("Welcome " + fname + " " + mname + " " + lname + ".  How high do you want to count?");
+	var sum;
+	var i;
+	sum = 1;
+	var output = ""
+	for (i = 1; i <= count; i = i+1){
+		if (i % 2 == 0){
+			output = output.concat(i + " The number is even<br>");
+		}
+		else{
+			output = output.concat(i, " The number is odd<br>");
+		}
+	}
+	document.getElementById("demo").innerHTML = output;
+}
+</script>
+<header>
+  <img src="images/oodlesofyumlogo.jpg" height="200" alt="logo">
+  <h4>We Are the Premiere Bakery</h4>
+</header>
+<section>
+<h2>Fizz Buzz 0</h2>
+<span id="welcome_message">Welcome to Oodles of Yum</span><br>
+<a href="https://en.wikipedia.org/wiki/Fizz_buzz">Fizz Buzz Explanation</a>
+<hr class="featurette-divider">
+	<div class="container">
+		<div id="pies" class="row featurette">
+		  First Name: <input type="text" id="fname"><br>
+		  Middle Name: <input type="text" id="mname"><br>
+		  Last Name: <input type="text" id="lname"><br>  
+		  <button onClick="myFunction()">Submit</button>
+		</div>
+		<div class="col-md-7">
+			<span id="demo"></span>
+		</div>
+	</div>
+</section>
+<footer style="text-align: center;">
+<a href="http://jigsaw.w3.org/css-validator/check/referer" 
+style="background-color: transparent">
+<img style="border-style:none" width="88" height="31" 
+src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
+<p>
+<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
+		<img src="images/valid_html5.gif"  alt="Valid HTML 5" 
+		 height="31" width="88" style="border:0px;">
+</a></p>
+<p class="pull-right">
+        <p style="color:#f5f5dc"">&copy; 2019 oodlesofyum &middot; Made with<span id = "heart"></span> &hearts;
+        by oodlesofyum</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
