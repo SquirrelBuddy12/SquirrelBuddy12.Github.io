@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>swtl_51-60</title>
+	<link href="styles/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/brand.css" rel="stylesheet">
+	</head>
+<body>
+<header>
+    <img src="images/oodlesofyumlogo.jpg" height="200" alt="logo">
+    <h2>Oodles of Yum Bakery SWTL 51-60</h2>
+    <h4>We Are the Premiere Bakery</h4>
+</header>
+<section>
+	<hr class="featurette-divider">
+	<div class="container">
+	<div id="pies" class="row featurette">
+	<div class="col-md-7">
+</div>
+</div>
+</div>	
+	<h2 style="color:#253C73">Smarter Way to Learn 51-60</h2>
+<h3>SWTL 51</h3>
+<h3>Reading and Setting Paragraph Text</h3>
+ function peekAtContent() {
+   var whatsThere =
+document.getElementByID("content").innerHTML;
+}   
+<h3>SWTL 52</h3>
+<h3>Manipulating Images and Text</h3>
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+<h3>SWTL 53</h3>
+<h3>Swapping Images</h3>
+function swapPic() {
+  document.getElementById(eId).src = new.Pic;
+}  
+<h3>SWTL 54</h3>
+<h3>Swapping Images and Setting Classes</h3>
+function getAddress() {
+  var link = document.getElementById("link1");
+  var address = link.href;
+}
+<h3>SWTL 55</h3>
+<h3>Setting Styles</h3>
+function myFunction() {
+  var element = document.getElementById("myDIV");
+  element.classList.toggle("mystyle");
+}
+<h3>SWTL 56</h3>
+<h3>Target All Elements By Tag Name</h3>
+var par = documen.getElementsByTagName("p");
+<h3>SWTL 57</h3>
+<h3>Target Some Elements by Tag Name</h3>
+var e = document.getElementByID("rules");
+var paragraphs = e.getElementByTagName('p");
+Line 1 assigns the div with the id "rules" to the variable e.  
+<h3>SWTL 58</h3>
+<h3>The DOM</h3>
+var paragraphs = document.getElementsByTagName("P");
+// paragraphs[0] is the first <p> element
+// paragraphs[1] is the second <p> element
+alert(paragraphs[0].nodeName);
+All P elements must be returned.
+<h3>SWTL 59</h3>
+<h3>The DOM: Parents and Children</h3>
+<h2>Finding HTML Elements by Tag Name</h2>
+<div id="main">
+<p>The DOM is very useful.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+</div>
+<p id="demo"></p>
+<script>
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+</script>
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+<h3>SWTL 60</h3>
+<h3>The DOM: Finding Children</h3>
+var d = document.getElementById("div3");
+var p = d.getElementsByTagName("p");
+var contents = p[2].innerHTML;
+</section>
+<footer style="text-align: center;">
+<a href="http://jigsaw.w3.org/css-validator/check/referer" 
+style="background-color: transparent">
+<img style="border-style:none" width="88" height="31" 
+src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
+<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
+		<img src="images/valid_html5.gif"  alt="Valid HTML 5" 
+		 height="31" width="88" style="border:0px;">
+</a>
+<p class="pull-right"><a href="#">Back to top</a></p>
+        <p style="color:#FF5D73">&copy; 2019 oodlesofyum &middot; Made with<span id = "heart"></span> &hearts;
+        by oodlesofyum</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</footer>
+</body>
+</html>

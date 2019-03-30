@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fizz Buzz 4</title>
+	<link href="styles/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/brand.css" rel="stylesheet">
+</head>
+<body>
+<script>
+function checkDivision(iCounter, divisor) {
+	return iCounter % divisor === 0;
+}
+function isEmpty(str) {
+    return (!str || 0 === str.length);
+}
+function myFunction() {
+	var fname = document.getElementById('fname').value
+	var mname = document.getElementById('mname').value
+	var lname = document.getElementById('lname').value
+	var name = fname + " " + mname + " " + lname
+	if (name=="  ")
+	{
+		document.getElementById('welcome_message').innerHTML = "Welcome to Oodles of Yum! How high do you want to count?";
+	}
+	else
+	{
+		document.getElementById('welcome_message').innerHTML = "Welcome, " + name + ", to Oodles of Yum! How high do you want to count?";
+	
+	}
+	
+	if(isEmpty(fname)) {alert("Please enter a first name.");return;}
+	if(isEmpty(mname)) {alert("Please enter a middle name.");return;}
+	if(isEmpty(lname)) {alert("Please enter a last name.");return;}
+
+	var sum;
+	var i;
+	sum = 1;
+	var output = "";
+	var firstDivisor = parseInt(document.getElementById("num1").value); 
+	var secondDivisor = parseInt(document.getElementById("num2").value);
+	var thirdDivisor = parseInt(document.getElementById("num3").value);
+
+	if(isEmpty(firstDivisor)) {alert("Please enter a first divisor.");return;}
+	if(isEmpty(secondDivisor)) {alert("Please enter a second divisor.");return;}
+	if(isEmpty(thirdDivisor)) {alert("Please enter a third divisor.");return;}
+	
+	var firstKeyword = document.getElementById("kw1").value;
+	var secondKeyword = document.getElementById("kw2").value;
+	var thirdKeyword = document.getElementById("kw3").value;
+
+	if(isEmpty(firstKeyword)) {alert("Please enter a first keyword.");return;}
+	if(isEmpty(secondKeyword)) {alert("Please enter a second keyword.");return;}
+	if(isEmpty(thirdKeyword)) {alert("Please enter a third keyword.");return;}
+
+	var defaultKeyword = document.getElementById("defaultKeyword").value;
+	var totalNumber = parseInt(document.getElementById("totalNumber").value);
+	if(isEmpty(defaultKeyword)) {alert("Please enter a default keyword.");return;}
+	if(isEmpty(totalNumber)) {alert("Please enter a total number.");return;}
+
+	output = output + "<table style='display: inline-block;'>";
+	for (i = 1; i <= totalNumber; i = i+1){
+		var keyword = "";
+		
+		if (checkDivision(i,firstDivisor)){
+			keyword += firstKeyword;
+		}
+		
+		if (checkDivision(i, secondDivisor)){
+			keyword += secondKeyword;
+		}
+
+		if (checkDivision(i, thirdDivisor)){
+			keyword += thirdKeyword;
+		}
+		
+
+		if(keyword == "") {
+			keyword = defaultKeyword;
+		}
+		
+
+		output = output +"<tr><td>"+ i + "&nbsp;&nbsp;</td><td>" + keyword + "</td></tr>";
+
+	}
+	output = output + "</table>"
+	document.getElementById("demo").innerHTML = output;
+}
+
+</script>
+<header>
+  <img src="images/oodlesofyumlogo.jpg" height="200" alt="logo">
+  <h4>We Are the Premiere Bakery</h4>
+</header>
+<section>
+<h2>Fizz Buzz 4</h2>
+<a href="https://en.wikipedia.org/wiki/Fizz_buzz">Fizz Buzz Explanation</a><br>
+<span id="welcome_message">Welcome to Oodles of Yum</span><br>
+<hr class="featurette-divider">
+<div style="text-align: center">
+	<table style="display: inline-block;">
+		<tr><td>First Name:</td><td><input type="text" id="fname"></td></tr>
+		<tr><td>Middle Name:</td><td><input type="text" id="mname"></td></tr>
+		<tr><td>Last Name:</td><td><input type="text" id="lname"></td></tr>  
+	</table>
+	<br>
+	
+	
+		<div id="pies" class="row featurette">
+		
+		  <br>
+		  Number <input type="text" id="num1" size="1" value="3"> 
+		  Prints <input type="text" id="kw1" size="4" value="cake"><br>
+		  Number <input type="text" id="num2" size="1" value="5"> 
+		  Prints <input type="text" id="kw2" size="4" value="pie"><br>
+		  Number <input type="text" id="num3" size="1" value="7"> 
+		  Prints <input type="text" id="kw3" size="4" value="cookie"><br>
+		  
+		  Total Number <input type="text" id="totalNumber" size="1" value="140"> 
+		  Default Keyword <input type="text" id="defaultKeyword" size="4" value="yum!"><br>
+		  
+		  <button onClick="myFunction()">Submit</button><br>
+		</div>
+		<div class="row featurette">
+			<span id="demo"></span>
+		</div>
+	</div>
+</section>
+<footer style="text-align: center;">
+<a href="http://jigsaw.w3.org/css-validator/check/referer" 
+style="background-color: transparent">
+<img style="border-style:none" width="88" height="31" 
+src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
+<p>
+<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
+		<img src="images/valid_html5.gif"  alt="Valid HTML 5" 
+		 height="31" width="88" style="border:0px;">
+</a></p>
+<p class="pull-right">
+        <p style="color:#f5f5dc">&copy; 2019 oodlesofyum &middot; Made with<span id = "heart"></span> &hearts;
+        by oodlesofyum</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
