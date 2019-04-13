@@ -1,0 +1,42 @@
+body
+{      background-color: #D3FFE3;
+       color: #000000;
+	   margin-left: 100px;
+	   margin-right: 100px;
+}
+caption 
+{ 
+       font-family: Verdana, sans-serif;
+       font-weight: bold;
+	   font-size: 1.0em;
+       padding-bottom: 0.5em;
+}
+
+header
+{ 
+      background-color: #D2B48C; 
+      color: #191970;
+	  text-align: center;
+}
+
+h1, h2, h3
+{     
+       margin: 0;
+} 
+nav
+{ 
+      float: left;
+      width: 150px;
+      padding: 10px;
+}
+
+figure
+{
+	text-align: center;
+}
+
+footer
+{
+	text-align: center;
+}
+	

@@ -1,0 +1,68 @@
+body
+{
+  margin: 50px;
+  font-family: Cambria, Georgia, sans-serif;
+  background-color: #b8d5b8;
+}
+header 
+{
+  padding-top: 5px;
+  background-color: transparent;
+  padding: 40px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  width: 100%;
+
+}
+section 
+{
+	background-color: #b8d5b8;
+}
+
+section:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+td 
+{
+	text-align: right;
+	padding: 5px;
+}
+h2
+{
+	color: #253C73;
+}
+.center {
+  width: 60%;
+  padding: 10px;
+}
+
+footer
+{
+  background-color: #d7b49e;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 100%
+}
+.hidden {display:none;}
+
+@media (max-width: 600px)
+{
+  nav, article {
+    width: 100%;
+    height: auto;
+}
+.offset
+{
+  /* if your browser supports this property, the 3rd example will have a smaller outline than the 2nd example */
+    outline-offset: -10px;
+}
+.bordered div, .outlined div
+{
+  background: #CCC;
+}
