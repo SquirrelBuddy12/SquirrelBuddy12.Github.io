@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>swtl_81-89</title>
+	<link href="styles/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/brand.css" rel="stylesheet">
+	<script src="scripts/js/swtl_81-89.js"></script>
+</head>
+<body>
+<header>
+    <img src="images/oodlesofyumlogo3.jpg" height="200" alt="logo">
+</header>
+<section>
+	<hr>
+	<h2>Smarter Way to Learn 81-89</h2>
+	<h3>SWTL 81</h3>
+	<h3>Browser Control: Testing for Popup Blockers</h3>
+	<h4>Popup blockers are a standard feature of browsers, with some level of popup
+	blocking usually built in as a default. JavaScript popups, and especially those that open a new
+	page within the same website, are often tolerated by default, but you can never be sure. If
+	popups are an essential feature of your site, you need to test whether your popups are going to
+	be blocked. If they are, you can ask the user to disable the popup blocker for your site.
+	To test it, you open a small test popup, and then quickly close it. This will probably happen so fast
+	that the user may won't notice. If the attempt succeeds, the window handle will have a value. If the popup is blocked,<br>
+	the handle will be null, your message will be delivered.<h4>
+	<button onclick="chapter81();">Go</button>	
+	<hr>
+
+	<h3>SWTL 82</h3>
+	<h3>Form Validation: Text Fields</h3>
+	<h4>Form validation makes sure your users are filling out your forms correctly. With form validation, if there is a problem, JavaScript helps you find this out. If there is a problem you can ask the user to try again.</h4> 
+	Please enter your last name.<br>
+	<input type="text" id="lastNameField">
+	<button onclick="chapter82();">Go</button>	
+	<hr>
+
+	<h3>SWTL 83</h3>
+	<h3>Form Validation: Drop-Downs</h3>
+	<h4>Consider a form with a select a cake field. I'm limiting the number of cakes to just 4, for
+	simplicity. When the user clicks the up or down arrow to the right of SELECT A STATE, a
+	menu drops down. She selects a cake from it. If she forgets, a popup alert comes up.</h4>
+	<select id="cakes">
+		<option value="" selected="selected">SELECT A CAKE</option>
+		<option value="CH">Chocolate</option>
+		<option value="VA">Vanilla</option>
+		<option value="ST">Strawberry</option>
+		<option value="CO">Coconut</option>
+	</select>&nbsp;&nbsp;
+	<button onclick="chapter83();">Go</button>	
+	<hr>
+
+	<h3>SWTL 84</h3>
+	<h3>Form Validation: Radio Buttons</h3>
+	<h4>Let's code a form with a group of radio buttons. The buttons are Cake, Pie, and Cookie.
+	 Note that the radio buttons all have the same name, "r1". This is the validating function that checks to see if the user has clicked one of the buttons.</h4>
+<form onSubmit="checkRadioButtons();">
+<input type="radio" name="r1" value="cake">Cake<br>
+<input type="radio" name="r1" value="pie">Pie<br>
+<input type="radio" name="r1" value="cookie">Cookie<br>
+<input type="submit" value="Submit Form">
+</form>
+<hr>
+
+	
+    <h3>SWTL 85</h3>
+	<h3>Form Validation: ZIP Codes</h4>
+	<h4>You've learned how to make sure the user hasn't left the field blank. But how do
+	you test if the user has entered the right number of digits for a ZIP—5 digits?
+	HTML gives you a way to keep her from entering too many digits: maxlength=5. But if
+	you want to make sure they haven't entered too few digits, you need to use JavaScript.</h4> 
+    <h3>Form Validation: ZIP Codes</h4>
+	<form onSubmit="checkZipCodes();">	
+	<input type="text" id="zipcode">
+	<button onclick="chapter85();">Go</button>	
+	<hr>
+
+    <h3>SWTL 86</h3>
+	<h3>Form Validation: Email</h3>
+	<h4>Validating an email field includes checking to make sure there are no illegal characters,
+	like spaces, and that all the essentials of a legal email address are there.</h4>
+    <input type="text" id="email">
+	<button onclick="chapter86();">Go</button>	
+	<hr>
+	
+    <h3>SWTL 87</h3>
+    <h3>Exceptions: Try and Catch</h3>
+	<h4>The keyword alert, mispelled, breaks the code. But JavaScript doesn't tell you
+	what's wrong. Of course, in the small piece of code above, it's easy to spot the problem. But what if the function runs 40 lines and calls three other functions? It would be nice if JavaScript reported
+	the specific problem to you instead of just breaking. That's what try and catch is for.</h4>
+	
+	<p id="demo87"></p>
+	<button onclick="chapter87();">Go</button>	
+	<hr>	
+
+    <h3>SWTL 88</h3>
+    <h3>Exceptions: Throw</h3>
+	<h4>By adding one or more throw statements, you can define your own errors in a try...catch
+	pair. This can be useful for dealing with user behavior.Suppose you've asked the user to create a password. It must be at least 8 to 12 characters long, must contain at least one number, and can't contain any spaces.</h4>
+
+	<form onSubmit="return checkPassword();">
+	Enter a password<br>
+	(8-12 characters, at least 1 number, no spaces)<br>
+	<input type="text" id="f1">
+	<input type="submit" value="Submit">
+	</form>
+    <button type="button" onclick="chapter88()">Test Input</button>
+    <p id="p01"></p>
+    <hr>	
+
+    <h3>SWTL 89</h3>
+    <h3>Handling Events Within JavaScript</h3>
+	<h4>In earlier chapters you learned how to handle events like a button click or form
+asubmission with inline event handlers. That is the oldest and least abstract way to do it. 
+According to the professional coder's separate-church-and-state ethos, the functionality of
+JavaScript should be kept separate from the content of HMTL.</h4> 
+<input type="button" value="Click" id="button1">
+<br> 
+</section>
+<br>
+<footer>
+        &copy; 2019 oodlesofyum &middot; Made with &hearts;
+        by oodlesofyum<br>
+	<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
+		<img src="images/valid_html5.gif"  alt="Valid HTML 5" 
+		   height="31" width="88">
+		 </a>	
+		 
+	<a href="http://jigsaw.w3.org/css-validator/check/referer;"> 
+	<img style="border-style:none" width="88" height="31" 
+	src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+</a>
+</footer>
+</body>
+</html>
+
+
+
+	
