@@ -12,115 +12,94 @@
 </head>
 <body>
 <header>
-  <img src="images/oodlesofyumlogo.jpg" height="200" alt="logo">
-  <h2>Oodles of Yum Bakery SWTL 11-20</h2>
-  <h4>We Are the Premiere Bakery</h4>
+ <img src="images/oodlesofyumlogo3.jpg" height="200" alt="logo">
 </header>
 <section>
-	<hr class="featurette-divider">
-	<div class="container">
-	<div id="pies" class="row featurette">
-	<div class="col-md-7">
-	<h2 style="color:#253C73">Smarter Way to Learn</h2>
+<h2> Smarter Way to Learn 11-20</h2>
 <h3>SWTL 11</h3>
 <h3>Comparison Operators</h3>
-  <p>if (fullName === "Rebecca" + "" + "Leo") {</p>
-  <p>if (Your lotteryNumber !== 4494) {</p>
-  <p>alert("Try again.");</p>
-  <p>  }</p>
-  <p>}</p>
+<h4>The comparison operator === is a type of equality operator. As you learned in the last chapter, you use it
+to compare two things to see if they're equal. You can use the it to compare a variable with a string, a variable
+with a number, a variable with a math expression, or a variable with a variable. And you can use it to
+compare various combinations.</h4>
+<button onclick="chapter11();">Go</button>	
+<hr>
 <h3>SWTL 12</h3>
 <h3>If else and else if</h3>
-  <p>var x = prompt("Is it supposed to be sunny today?"</p>
-  <p>if (x = "sunny"){</p>
-  <p>}</p>
-  <p>if x!== "rain") {</p>
-  <p>alert("Wrong!");</p>
-  <p>var goodWeather = "sunny";</p>
-  <p>if (x ==== "goodWeather"){</p>
-  <p>alert("right");</p>
-  <p>}</p>
-  <p>else if (x === "warm") {</p>
-  <p>alert("Close");</p>
-  <p>}</p>
-  <p>else {</p>
-  <p>alert("Wrong");</p>
-  <p>}</p>
+<h4>The if statements you've coded so far have been all-or-nothing. If the condition tested
+true, something happened. If the condition tested false, nothing happened. If we have several statements all bases are covered, depending on what the user enters.</h4>
+<button onclick="chapter12();">Try Me</button>
+<hr>
 <h3>SWTL 13</h3>
 <h3>Testing Sets of Conditions</h3>
-<p>if (age &lt; 50 || age &lt; 12 && sport === "running");{</p>	
+<h4>Using the if statement, you've learned to test for a condition. If the condition is met, one or
+more statements execute. However, you may have several conditions that have to be met in order for a
+test to succeed.</h4>
+<button onclick="chapter13();">Try Me</button>
+<hr>
 <h3>SWTL 14</h3>
 <h3>If Statements Nested</h3>
-<p>if (a == b) {</p>
-<p>if (a == c) {</p>
-<p>alert("all are equal");</p>
-<p>} else {</p>
-<p>alert("a and b are equal");</p>
+<h4>Nest levels are communicated to JavaScript by the positions of the curly brackets. There
+are three blocks nested inside the top-level if. If the condition tested by the top-level if—that c
+has the same value as d—is false, none of the blocks nested inside executes. The opening curly
+bracket and the closing curly bracket enclose all the nested code, telling
+JavaScript that everything inside is second-level.</h4>
+<button onclick="chapter14();">Try Me</button>
+<hr>
 <h3>SWTL 15</h3>
 <h3>Arrays</h3>
-<p>var state0 = "California";</p>
-<p>var state1 = "Arizona";</p>
-<p>var state2 = "Illinois";</p>
-<p>alert("Welcome to " + state2);</p>
+<h4>An array is a variable that can have multiple values assigned to it.</h4>
+<button onclick="chapter15();">Try Me</button>
+<hr>
 <h3>SWTL 16</h3>
 <h3>Arrays with Adding and Removing Elements</h3>
-<p>states[0] = "Minnesota";</p>
-<p>states[1] = "Massachusetts";</p>
-<p>states[3] = "Wisconsin";</p>
+<h4>You can declare an empty variable, one that doesn't have a value. Then you can assign it a value of whatever you want.
+And you can change its value at will. You can do all these things with an array, as well.</h4> 
+<button onclick="chapter16();">Click Me</button>
+<hr>
 <h3>SWTL 17</h3>
 <h3>More Arrays With Shift and Unshift</h3>
-<p>cats.shift();</p>
-<p>cats.unshift();</p>
+<h4>Use the shift method to remove an element from the beginning of an array.
+To add one or more elements to the beginning of an array, use the unshift method.</h4> 
+<button onclick="chapter17();">Click Me</button>
+<hr>
 <h3>SWTL 18</h3>
-<h3>For Loops</h3>	
-<p>for (var i =0; i &amp; 4; i++) {</p>
-<p>if HouseToCheck === nicestHouse[i]){</p>
-<p>alert("It is the nicest house.");</p>
+<h3>For Loops</h3>
+<h4>The for loop - loops through a block of code a number of times:
+The for loop has the following syntax:
+Statement 1 is executed (one time) before the execution of the code block.
+Statement 2 defines the condition for executing the code block.
+Statement 3 is executed (every time) after the code block has been executed.</h4>
+<button onclick="chapter18();">Click Me</button>
+<hr>
 <h3>SWTL 19</h3>
 <h3>For Loops With Flags</h3>
-<p>var matchFound = "no";</p>
-<p>for var i = 0 i &lt; 4; i ++) {</p> 
-<p>if (HouseToCheck === nicestHouse[i]{</p>
-<p>  matchFound = "yes";</p>
-<p>    alert("It is the nicest house."); }</p>
-<p>if (matchFound === "no") {</p>
-<p>alert("It is not one of the nicest houses.");</p>
+<h4>There are several problems with the for loop example I gave you in the last chapter. The
+first problem is a potential communication problem. If a match between the user's city for example and the
+a list of cleanest cities is found, a confirming alert displays. But if there is no match, nothing
+happens. The user is left in the dark. If no match is found, we need to display an alert saying
+so. We do it with a flag. A flag is just a variable that starts out with a default value that you
+give it, and then is switched to a different value under certain conditions.</h4>
+<button onclick="chapter19();">Click Me</button>
+<hr>
 <h3>SWTL 20</h3>
 <h3>For Loops Nested</h3>
-<p>var text = ""</p>
-<p>var i;</p>
-<p>for (i = 0; i &lt; 6; i++) {</p>
-<p>if (i === 10) {</p>
-<p>    continue;</p>
-<p>  }</p>
-<p>  text += "The number is " + i + "<br>";</p>
-<p>}</p>
-</div>
-</div>
-</div>	
+<h4>This is an array of arrays. When you have an array of 3 arrays. The outer 'for' will loop through each of 1st level arrays. So the very first outer for loop you are going to grab the first inner array. In the inner loop you are going to loop through each of the 3 inner arrays one at a time. Such as 1 and 2 and then 3 and 4.</h4> 
+<button onclick="chapter20();">Click Me</button>
+<hr>
 </section>
-<footer style="text-align: center;">
-<div>
-<a href="http://jigsaw.w3.org/css-validator/check/referer" 
-style="background-color: transparent">
-<img style="border-style:none" width="88" height="31" 
-src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
-</div>
-<p>
-<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
-		<img src="images/valid_html5.gif"  alt="Valid HTML 5" 
-		 height="31" width="88" style="border:0px;">
-</a></p>
-</footer>
 <footer>
-<p class="pull-right"><a href="#">Back to top</a></p>
-        <p style="color:#FF5D73">&copy; 2019 oodlesofyum &middot; Made with<span id = "heart"></span> &hearts;
-        by oodlesofyum</p>
+        &copy; 2019 oodlesofyum &middot; Made with &hearts;
+        by oodlesofyum<br>
+	<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
+		<img src="images/valid_html5.gif"  alt="Valid HTML 5" 
+		   height="31" width="88">
+		 </a>	
+		 
+	<a href="http://jigsaw.w3.org/css-validator/check/referer;"> 
+	<img style="border-style:none" width="88" height="31" 
+	src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+</a>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
 </body>
 </html>
