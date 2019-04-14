@@ -10,104 +10,96 @@
 </head>
 <body>
 <header>
-    <img src="images/oodlesofyumlogo.jpg" height="200" alt="logo">
+    <img src="images/oodlesofyumlogo3.jpg" height="200" alt="logo">
     <h2>Oodles of Yum Bakery SWTL 41-50</h2>
-    <h4>We Are the Premiere Bakery</h4>
 </header>
 <section>
-	<hr class="featurette-divider">
-	<div class="container">
-	<div id="pies" class="row featurette">
-	<div class="col-md-7">
-</div>
-</div>
-</div>	
-	<h2 style="color:#253C73">Smarter Way to Learn 41-50</h2>
 <h3>SWTL 41</h3>
 <h3>While Loops</h3>
-<script>
-  var i = 0;
-   while (i <= 2) {
-console.log("<p>Would you like a piece of pie?</p>");
-      document.write("<p>Would you like a piece of pie?</p>");
-	  i++
-}
-</script>
+<h4>The while loop loops through a block of code as long as a specified condition is true.</h4>
+<button onclick="chapter41();">Go</button>	
+<hr>
 <h3>SWTL 42</h3>
 <h3>Do While</h3>
-var daysOfWeek ";= new Array();<br>
-daysofWeek[0] = "Monday", daysOfWeek[1] = "Tuesday";<br>
-daysofWeek[2] = "Wednesday", daysOfWeek[3] = "Thursday";<br>
-daysofWeek[4] = "Friday", daysOfWeek[5] = "Saturday";<br>
-daysofWeek[6] = "Sunday";<br>
-var count = 0<br>
-do {<br>
-  document.write(daysOfWeek[count] + "<br  />");<br>
-  ++count;<br>
-} while (count &lt; daysOfWeek.length);<br>
+<h4>The do/while statement creates a loop that executes a block of code once, before checking if the condition is true, then it will repeat the loop as long as the condition is true. The do/while statement is used when you want to run a loop at least one time, no matter what.</h4>
+<button onclick="chapter42();">Go</button>	
+<hr>
 <h3>SWTL 43</h3>
 <h3>Placing Scripts</h3>
-<p>This example calls a function which performs a calculation, and returns the result:</p>
-<p id="demo"></p><br>
-function myAdd(p1, p2) {<br>
-  return p1 / p2;<br>
-}<br>
-document.getElementById("demo").innerHTML = text(2, 2);<br>
+<p>Scripts calls a function which performs a calculation, and returns the result:</p>
+<button onclick="chapter43();">Go</button>
+<hr>	
 <h3>SWTL 44</h3>
 <h3>Commenting</h3>
-<p>// Look on the next few lines</p>
-<p>/* This is a comment that<br>
-*/is ignored.</p>
+<h4>Commenting, as you know from your work with HTML and CSS, is a way to tell the
+browser to ignore certain portions of text that you include within the body of code</h4>
+<button onclick="chapter44();">Go</button>
+<hr>	
 <h3>SWTL 45</h3>
 <h3>Events: Link</h3>
+<h4>The oldest and most straightforward approach to link, is inline event handling the easiest to learn, and can serve as a stepping stone to more advanced methods. Laterin the book, you'll learn the approach that's preferred by most professionals—the scripting approach.
+Inline event-handling means that you combine bits of JavaScript with HTML markup.</h4>
+<button onclick="chapter45();">Go</button>	
 <p><a href="JavaScript:void(0)" onClick="alert('Good Morning')">Click Me</a>
+<hr>
 <h3>SWTL 46</h3>
 <h3>Events: Button</h3>
-<input type="button" value="order" onClick="alert('Please place your order')">
+<h4>The event handler is the same, whether you're coding a link or a button:
+You press But the beginning of the code is different: input type="button" value="Click".
+But the beginning of the code is different.</h4>
+<button onclick="chapter46();">Go</button>
+<hr>	
 <h3>SWTL 47</h3>
 <h3>Events: Mouse</h3>
-<h1 onMouseover="alert('Be sure to get your studying done today!');">School Ends in May</h1>
+<button onclick="chapter47();">Go</button>
+<hr>	
 <h3>SWTL 48</h3>
 <h3>Events: Field</h3>
+<h4>The keyword here is onFocus. It tells JavaScript to do something when the user clicks in
+the field. The syntax is the same as for other event handlers that you've already learned to code: a
+keyword, followed by an equal sign, followed by JavaScript or HTML in quotes.
+After the user enters her email address—or not—and clicks outside the field or presses
+the tab key to move to another field—that is, when this field no longer has the focus—you want
+it to revert to a white background. You do this with the onBlur keyword, which is the opposite.</h4>
 Email:<br>
 <input type="text" size="30"
 onFocus="this.style.backgroundColor = 'pink';"
 onBlur="this.style.backgroundColor = 'black';">
+<button onclick="chapter48();">Go</button>
+<hr>
 <h3>SWTL 49</h3>
 <h3>Reading Field Values</h3>
-function checkAddress(fieldId) {<br>
-    if(document.getElementById(fieldId).value === "") {<br>
-    alert("Email address required.");<br>
-    }<br>
- }<br> 
+Suppose you've included an email field in a form, and you've made it a required field.
+The form has a submit button that the user clicks to submit the information that he's entered in
+the form. This is the markup that creates the form. 
+<form>
+Email:
+<input type="text" id="email">
+<input type="submit" value="Submit">
+</form>
+<button onclick="chapter49();">Go</button>
+<hr>
 <h3>SWTL 50</h3>
 <h3>Setting Field Values</h3>
 <p>This example shows how an "onblur" event works.</p>
 <p>Write something in the input field, and then click outside the field and you lose focus (blur).</p>
 <input type="text" onblur="myFunction()">
-<script>
-function myFunction() {
-  alert("Input field lost focus.");
-}
-</script>
+<button onclick="chapter50();">Go</button>
+<hr>
 </section>
-<footer style="text-align: center;">
-<a href="http://jigsaw.w3.org/css-validator/check/referer" 
-style="background-color: transparent">
-<img style="border-style:none" width="88" height="31" 
-src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
-<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
+<footer>
+        &copy; 2019 oodlesofyum &middot; Made with &hearts;
+        by oodlesofyum<br>
+	<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
 		<img src="images/valid_html5.gif"  alt="Valid HTML 5" 
-		 height="31" width="88" style="border:0px;">
+		   height="31" width="88">
+		 </a>	
+		 
+	<a href="http://jigsaw.w3.org/css-validator/check/referer;"> 
+	<img style="border-style:none" width="88" height="31" 
+	src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
 </a>
-<p class="pull-right"><a href="#">Back to top</a></p>
-        <p style="color:#FF5D73">&copy; 2019 oodlesofyum &middot; Made with<span id = "heart"></span> &hearts;
-        by oodlesofyum</p>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
 </footer>
+
 </body>
 </html>
