@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>Magic Crystals Ice Cream Shop</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet"  href="styles/icecream3.css" />
+<script>
+function setDesc() {
+	var desc = document.querySelector('input[name = "icecream"]:checked').value;
+	document.getElementById("icecream-desc").innerHTML = desc;
+	computePriceAndSalesTax();
+}
+
+
+function computePriceAndSalesTax() {
+	var choco = document.getElementById("choco")
+	var reeces = document.getElementById("reeces")
+	var gummy = document.getElementById("gummy")
+	
+	var price = 20;
+	
+	if (choco.checked)
+		price += 1.5;
+	if (reeces.checked)
+		price += 1.5;
+	if (gummy.checked)
+		price += 1.5;
+	
+	var sales_tax = price * 0.0725;
+	
+	document.getElementById("price").innerHTML = '$' + price.toFixed(2);
+	document.getElementById("sales-tax").innerHTML = '$' + sales_tax.toFixed(2);
+}
+
+function submitForm() {
+	return confirm("Do you really want to order this?")
+}
+</script>
+
+</head>
+<body>
+<div id="container"></div>
+<header id="header">
+<span><a href="content"></a></span>
+<img src="images/logo.png" alt="logo" class="center" height="95" width="200" />
+<img src="images/bluecrystal.png" alt="Rock Candy" class="right" height="95" width="95" />
+</header>
+<nav id="navigation"><ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="how_it_is_made.html">How it is Made</a></li>
+<li><a href="ordering.html">Ordering</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="recipes.html">Recipes</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+</nav>
+<main id="main">
+<h2>Ice Cream Cakes to Order!</h2>
+<img src="images/icecreamcake.jpg" alt="ice cream cake" height="200" width="300" />
+<form method="get" action="http://webdevbasics.net/scripts/demo.php" onsubmit="return submitForm(this);">
+<fieldset>
+<label for="first_name">First Name</label>
+<input type="text" id="first_name" maxlength="50" size="30" required="required">
+<label for="last_name">Last Name</label>
+<input type="text" id="last_name" maxlength="50" size="30" required="required">
+<label for="telephone">Phone Number</label>
+<input type="text" id="telephone" maxlength="50" size="30" required="required">
+<label for="email">Email</label>
+<input type="text" id="email" maxlength="50" size="30" required="required">
+
+<h3>Cakes</h3>
+<label for="wild-blueberry">Wild blueberry</label>
+<input type="radio" name="icecream" id="wild-blueberry" value="Loads of wild blueberries in creamy chocolate with chocolate pieces." onclick="setDesc()"><br>
+<label for="strawberry">Strawberry</label>
+<input type="radio" name="icecream" id="strawberry" value="Strawberry pieces in creamy vanilla bean ice cream." onclick="setDesc()"><br>
+<label for="pistachio">Pistachio</label>
+<input type="radio" name="icecream" id="pistachio" value="Green pistachio in creamy vanilla bean ice cream." onclick="setDesc()"><br>
+<div id="icecream-desc"></div>
+
+<h3>Mix Ins</h3>
+<label for="choco">Chocolate Pieces</label>
+<input id="choco" type="checkbox" onclick="computePriceAndSalesTax()"><br>
+<label for="reeces">Reeses Pieces</label>
+<input id="reeces" type="checkbox" onclick="computePriceAndSalesTax()"><br>
+<label for="gummy">Gummy Bears</label>
+<input id="gummy" type="checkbox" onclick="computePriceAndSalesTax()"><br>
+
+Price:
+<div id="price"></div>
+Sales Tax:
+<div id="sales-tax"></div>
+
+</fieldset>
+<input type="submit" value="Submit">
+<input type="button" name="reset_form" value="Reset Form" onclick="this.form.reset();">
+<input type="button" name="clear" value="Clear Form" onclick="clearForm(this.form);">
+</form>
+</main>
+<footer id="footer">Copyright&#160; 2018 Magic Crystals Ice Cream Shop<br>
+<br>
+	<a href="http://validator.w3.org/check?uri=referer" style="text-decoration:none;">
+		<img src="images/valid_html5.gif"  alt="Valid HTML 5" 
+		 height="31" width="88" style="border:0px;" />
+	</a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" style="text-decoration:none;">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+   </a>
+</footer>
+</body>
+</html>

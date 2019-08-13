@@ -1,0 +1,207 @@
+header, nav, main, footer, aside { display: block; }
+body
+{ 
+		margin:0px;
+		background-color: #ff8c42;
+}
+
+#container
+{ 		background-color: #D8EAAF;
+        color: #a23e48;
+		min-width: 960px;
+        font-family: Verdana, Arial, sans-serif; 
+}
+	 
+header
+{ 
+		background-color: #FCF7D1;
+		background-position: bottom;
+		background-repeat: repeat-x;
+		color: #6699CC;
+		text-align: center;
+		padding: 20px 30px 30px 40px;
+        border-bottom: 1px solid #000000;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF8C42;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #FF6607;
+}
+	  
+aside
+{ 		float: right;
+        width: 300px;
+		padding: 20px 30px 30px 20px;
+		margin-left: 20px;
+        background-color: #6699CC;
+		color:#fff275;
+}
+main
+{
+		padding: 1px 10px 20px 40px;
+		background-color: #F6BBA1;
+		color: #a23e48;
+}
+
+table, td, th
+{ 
+        margin: auto;
+		border: 1px solid gray;
+        font-family: Arial, sans-serif;
+		padding: 10px;
+		width: 700px;
+}
+
+footer
+{ 
+		font-size: .70em;
+        background-color: #FCF7D1;
+		background-position: bottom;
+		background-repeat: repeat-x;
+		height: 120px;
+		color: #FF3C38;
+		text-align: center;
+		padding: 0 20px;
+}
+h1
+{ 
+		margin-top: 10px;
+		font-size: 3em;
+		text-align: left
+}
+
+form
+{		padding: 10px;}
+
+label
+{
+	   float: left;
+	   width:150px;
+	   margin-right:10px;
+	   text-align:right;
+}
+
+input {}
+fieldset 
+{
+	  border:none;
+	  width:500px;
+	  margin: 0px auto;
+}
+
+
+a {
+	text-decoration:none;
+}
+	 
+.submits {
+	text-align: center;
+}
+
+
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+.right
+{
+    display: block;
+    margin-left: auto;
+	float: right;
+}
+
+
+
+	
+
